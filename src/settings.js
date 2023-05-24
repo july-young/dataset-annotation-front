@@ -47,5 +47,5 @@ module.exports = {
   /**
    * 用户社区
    */
-  Community: 'https://gitee.com/july_young/dataset-annotation-platform',
+  Community: 'https://github.com/july-young/dataset-annotation-backend',
 };
