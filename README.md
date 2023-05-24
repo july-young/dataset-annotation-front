@@ -1,4 +1,4 @@
-# 数据标注平台前端项目
+# 数据标注平台(前端)
 # dataset-annotation-front
 
 npm i
