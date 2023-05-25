@@ -1,4 +1,3 @@
-
 <template>
   <el-form-item>
     <slot name="label">

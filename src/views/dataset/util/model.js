@@ -1,4 +1,3 @@
-
 // 模型服务实例状态，每个单独的模型服务
 export const modelInstanceStatusEnum = {
   STARTING: { code: 101, text: '启动中', status: '' },

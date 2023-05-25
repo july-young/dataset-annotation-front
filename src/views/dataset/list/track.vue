@@ -1,4 +1,3 @@
-
 <template>
   <BaseModal
     :visible="visible"

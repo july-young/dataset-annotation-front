@@ -1,4 +1,3 @@
-
 <template>
   <el-form ref="formRef" :model="model" v-bind="attrs" v-on="$listeners" @submit.native.prevent>
     <template v-for="item of mergedFormItems">

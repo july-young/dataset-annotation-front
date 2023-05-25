@@ -1,4 +1,3 @@
-
 <template>
   <BaseModal
     :key="state.formKey"

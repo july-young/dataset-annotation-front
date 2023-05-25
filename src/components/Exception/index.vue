@@ -1,4 +1,3 @@
-
 <template functional>
   <div class="exception">
     <div class="exception-inner">

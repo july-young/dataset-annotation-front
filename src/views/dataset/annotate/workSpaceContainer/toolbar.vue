@@ -1,4 +1,3 @@
-
 <template>
   <div class="workspace-toolbar flex flex-between">
     <div class="toolbar-left">

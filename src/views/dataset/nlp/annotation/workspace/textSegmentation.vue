@@ -1,4 +1,3 @@
-
 <template>
   <div v-hotkey.stop="keymap">
     <div class="flex flex-between">

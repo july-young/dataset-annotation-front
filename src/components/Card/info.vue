@@ -1,4 +1,3 @@
-
 <template functional>
   <div class="info-card" @click="props.handleClick">
     <div class="info-card-inner">

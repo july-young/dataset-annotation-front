@@ -1,4 +1,3 @@
-
 <template>
   <div class="description-items">
     <table>

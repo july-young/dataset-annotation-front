@@ -1,4 +1,3 @@
-
 <template>
   <div v-loading="loadingHistory" class="pod-monitor-container">
     <div v-if="displayCpu" :id="cpuId" class="charts" />

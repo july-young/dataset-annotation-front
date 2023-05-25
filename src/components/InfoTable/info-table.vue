@@ -1,4 +1,3 @@
-
 <template>
   <div class="info-data-table">
     <el-table

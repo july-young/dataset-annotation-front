@@ -1,4 +1,3 @@
-
 <template>
   <component :is="component" v-bind="attrs" v-on="listeners" />
 </template>

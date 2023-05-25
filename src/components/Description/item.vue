@@ -1,4 +1,3 @@
-
 <template>
   <td :colspan="col.span || 1" class="description-item">
     <span class="description-item-label">{{ col[labelBy] }}：</span>

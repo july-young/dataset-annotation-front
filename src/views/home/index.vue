@@ -1,4 +1,3 @@
-
 <template>
   <div class="index-content">
     <div class="index-header">

@@ -1,4 +1,3 @@
-
 <template>
   <div v-loading="loading" class="textEditor" v-on="listeners">
     <pre>{{ txt }}</pre>

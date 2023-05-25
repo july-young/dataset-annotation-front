@@ -1,4 +1,3 @@
-
 <template>
   <div :class="rootClass" class="img-gallery">
     <ul v-if="dataImages.length" :class="rootClass + '__wrapper'">

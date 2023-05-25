@@ -1,4 +1,3 @@
-
 <template>
   <el-tooltip v-bind="mergedAttrs">
     <i class="primary f18 vm" :class="[icon]" />

@@ -1,4 +1,3 @@
-
 <template>
   <div v-loading="loading" class="app-container" style="width: 600px; margin-top: 28px;">
     <el-form ref="formRef" :model="createForm" :rules="rules" label-width="100px">

@@ -1,4 +1,3 @@
-
 <template>
   <PrismEditor
     ref="editorRef"

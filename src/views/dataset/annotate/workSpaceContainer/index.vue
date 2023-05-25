@@ -1,4 +1,3 @@
-
 <template>
   <div class="workspace-container flex flex-col">
     <!-- zoom {{ zoom }}

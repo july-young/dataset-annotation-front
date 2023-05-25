@@ -1,4 +1,3 @@
-
 <template>
   <div class="wrapper">
     <div class="audio" :class="{ 'flex flex-center': mini }">

@@ -1,4 +1,3 @@
-
 <template>
   <el-table ref="table" v-loading="loading" :data="data" v-bind="attrs" v-on="$listeners">
     <template v-for="column in mergedColumns">

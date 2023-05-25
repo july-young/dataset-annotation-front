@@ -1,4 +1,3 @@
-
 <template>
   <div v-click-outside="onClickOutside" class="dataset-searchLabel tr">
     <div v-if="state.open">

@@ -1,4 +1,3 @@
-
 <template>
   <div ref="listWrapper" class="infinite-list-wrapper" style="overflow: auto;">
     <ul

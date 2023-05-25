@@ -1,4 +1,3 @@
-
 <template>
   <div class="info-data-radio">
     <el-radio-group ref="radioRef" v-model="state.sValue" v-bind="attrs" v-on="listeners">

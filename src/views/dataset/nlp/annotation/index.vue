@@ -1,4 +1,3 @@
-
 <template>
   <div class="main-content">
     <div v-loading="state.pageLoading" class="text-container">

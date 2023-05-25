@@ -1,4 +1,3 @@
-
 <script>
 import { onMounted, ref, toRefs, reactive, watch } from '@vue/composition-api';
 import { select as d3Select, event as d3Event } from 'd3-selection';

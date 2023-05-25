@@ -1,4 +1,3 @@
-
 <template>
   <div class="setting-container-footer">
     <el-form-item label="标注类型标签">

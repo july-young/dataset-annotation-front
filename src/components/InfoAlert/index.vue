@@ -1,4 +1,3 @@
-
 <template functional>
   <div class="el-alert el-alert--primary is-dark">
     <div class="el-alert-content">

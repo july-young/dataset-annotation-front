@@ -1,4 +1,3 @@
-
 <template>
   <div class="previewer">
     <div class="extraRow flex flex-between mb-10">

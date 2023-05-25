@@ -1,5 +1,3 @@
-
-
 <script>
 import NProgress from 'nprogress'; // progress bar
 import { getDatasetType, pushUrl } from './util';

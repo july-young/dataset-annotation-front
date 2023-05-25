@@ -1,4 +1,3 @@
-
 <template>
   <div class="tc">
     <i :class="klass" style="font-size: 72px;"></i>

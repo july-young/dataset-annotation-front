@@ -1,4 +1,3 @@
-
 <template>
   <Form ref="formRef" v-bind="$attrs" @fileChange="handleFileChange" />
 </template>

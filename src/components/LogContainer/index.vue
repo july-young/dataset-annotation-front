@@ -1,4 +1,3 @@
-
 <template>
   <div v-mouse-wheel="getLog">
     <prism-render :code="logTxt" />

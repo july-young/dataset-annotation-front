@@ -1,4 +1,3 @@
-
 <script>
 import { reactive } from '@vue/composition-api';
 import { findAncestorSvg } from '@/utils';

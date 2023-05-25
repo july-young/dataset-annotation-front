@@ -1,4 +1,3 @@
-
 <template>
   <div class="app-container">
     <!-- 创建资源独占 -->

@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <label class="el-form-item__label no-float tl">已选标签</label>

@@ -1,4 +1,3 @@
-
 <template>
   <BaseLayout :showBack="true" :showSidebar="false" :showFooter="false" />
 </template>

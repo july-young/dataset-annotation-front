@@ -1,4 +1,3 @@
-
 <template>
   <BaseModal
     class="upload-dialog"

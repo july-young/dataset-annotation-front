@@ -1,4 +1,3 @@
-
 <template>
   <div v-if="labels.length" class="mb-10">
     <div class="flex flex-between flex-wrap flex-vertical-align">

@@ -1,4 +1,3 @@
-
 <template>
   <div class="resource-monitoring-body">
     <div class="progress-wrapper flex flex-around">

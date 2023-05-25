@@ -1,4 +1,3 @@
-
 <template>
   <ValidationObserver ref="observerRef">
     <el-popover

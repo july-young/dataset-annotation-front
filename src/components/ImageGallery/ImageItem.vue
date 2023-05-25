@@ -1,4 +1,3 @@
-
 <template>
   <li :key="item.id" :class="rootClass + '__item'">
     <div v-if="!isMultiple" :class="thumbnailClass">

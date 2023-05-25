@@ -1,4 +1,3 @@
-
 <template>
   <div class="annotate-container">
     <ThumbContainer

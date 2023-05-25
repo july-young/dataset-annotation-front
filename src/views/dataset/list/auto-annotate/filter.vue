@@ -1,4 +1,3 @@
-
 <template>
   <collapse-box ref="collapseBoxRef" title="高级设置">
     <template #content>

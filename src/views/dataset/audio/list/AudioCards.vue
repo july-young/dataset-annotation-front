@@ -1,4 +1,3 @@
-
 <template>
   <div v-loading="loading" class="audio-cards">
     <ul class="audio-cards__wrapper">

@@ -1,4 +1,3 @@
-
 <template>
   <el-form ref="form" :model="state.model" :rules="rules" label-width="110px">
     <el-form-item label="数据集名称" prop="name">

@@ -1,4 +1,3 @@
-
 <template>
   <Classification :templateType="templateType" />
 </template>

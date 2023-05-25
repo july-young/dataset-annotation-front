@@ -1,4 +1,3 @@
-
 <template>
   <div style="width: 600px;">
     <el-form-item label="文件类型" prop="fileType">

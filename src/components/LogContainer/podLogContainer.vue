@@ -1,4 +1,3 @@
-
 <template>
   <div class="rel pod-log-container-inside">
     <div v-if="showFunctional">

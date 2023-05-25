@@ -1,4 +1,3 @@
-
 <template>
   <div class="annotation-table mb-10">
     <el-form-item label="全部标注" style="margin-bottom: 0;" />

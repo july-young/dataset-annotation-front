@@ -1,4 +1,3 @@
-
 <template>
   <g class="segmentation">
     <!-- 绘制 -->

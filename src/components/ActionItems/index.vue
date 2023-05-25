@@ -1,4 +1,3 @@
-
 <template>
   <div class="action-items">
     <span v-for="item in availItems" :key="item.key">

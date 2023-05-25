@@ -1,4 +1,3 @@
-
 <template>
   <el-form ref="formRef" :model="form" :rules="rules" label-width="100px">
     <el-form-item label="权限组名称" prop="authCode">

@@ -1,4 +1,3 @@
-
 <template>
   <div class="prism-wrapper">
     <Prism :language="language" :code="code" class="prism-content" />

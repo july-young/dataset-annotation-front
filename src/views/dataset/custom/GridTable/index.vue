@@ -1,4 +1,3 @@
-
 <template>
   <div v-if="data.length > 0" class="flex flex-wrap">
     <div v-for="item in data" :key="item.name" class="mx-10 my-10" style="width: 200px;">

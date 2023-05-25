@@ -1,4 +1,3 @@
-
 <template>
   <div class="el-statistic">
     <div v-if="title" class="el-statistic-title">{{ title }}</div>
