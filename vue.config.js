@@ -41,81 +41,81 @@ module.exports = {
         }
       }
 
-      // 根据 mock 请求发送响应
-      function sendValue(req, res, value) {
-        if (typeof value === 'function') {
-          value = value(req, res);
-        }
+      // // 根据 mock 请求发送响应
+      // function sendValue(req, res, value) {
+      //   if (typeof value === 'function') {
+      //     value = value(req, res);
+      //   }
 
-        if (value.$$header) {
-          Object.keys(value.$$header).forEach(key => {
-            res.setHeader(key, value.$$header[key]);
-          });
-        }
+      //   if (value.$$header) {
+      //     Object.keys(value.$$header).forEach(key => {
+      //       res.setHeader(key, value.$$header[key]);
+      //     });
+      //   }
 
-        const delay = value.$$delay || 0;
-        delete value.$$header;
-        delete value.$$delay;
+      //   const delay = value.$$delay || 0;
+      //   delete value.$$header;
+      //   delete value.$$delay;
 
-        Promise.delay(delay, value).then(result => {
-          res.send(result);
-        });
-      }
+      //   Promise.delay(delay, value).then(result => {
+      //     res.send(result);
+      //   });
+      // }
 
-      // 分解mockPath
-      const splitUrl = resouce => {
-        const splitUrl = resouce.split('::');
-        let verb = 'get', url = '';
-        if (splitUrl.length > 2) {
-          throw new Error('url 格式不对');
-        }
-        if (splitUrl.length === 2) {
-          verb = splitUrl[0].toLowerCase();
-          url = splitUrl[1];
-        } else if (splitUrl.length === 1) {
-          verb = 'get';
-          url = splitUrl[0];
-        }
-        return [verb, url];
-      }
+      // // 分解mockPath
+      // const splitUrl = resouce => {
+      //   const splitUrl = resouce.split('::');
+      //   let verb = 'get', url = '';
+      //   if (splitUrl.length > 2) {
+      //     throw new Error('url 格式不对');
+      //   }
+      //   if (splitUrl.length === 2) {
+      //     verb = splitUrl[0].toLowerCase();
+      //     url = splitUrl[1];
+      //   } else if (splitUrl.length === 1) {
+      //     verb = 'get';
+      //     url = splitUrl[0];
+      //   }
+      //   return [verb, url];
+      // }
 
-      // 处理 restful mock 接口
-      const mockMap = require(path.join(__dirname, 'mock/mock-map'));
-      // 根据用户是否添加 mock 文件来决定走本地 mock 或者转发到 dev 接口
-      app.use('/mock', proxy(process.env.VUE_APP_BASE_API, {
-        filter: function(req, res){
-          // 是否匹配到本地 rest 风格 api mockUrl
-          const matchRESTApi = Object.keys(mockMap).findIndex(d => {
-            const [,uri] = splitUrl(d);
-            const matcher = match(uri, { decode: decodeURIComponent })
-            return matcher(req.path)
-          }) > -1
-          // 如果匹配到 restApi 走本地 mock
-          if (matchRESTApi) return false
-          // 其他路径
-          const mockPath = path.join(__dirname, 'mock', req.path);
-          const value = requireUncached(mockPath);
-          return value === false
-        }
-      }));
+      // // 处理 restful mock 接口
+      // const mockMap = require(path.join(__dirname, 'mock/mock-map'));
+      // // 根据用户是否添加 mock 文件来决定走本地 mock 或者转发到 dev 接口
+      // app.use('/mock', proxy(process.env.VUE_APP_BASE_API, {
+      //   filter: function(req, res){
+      //     // 是否匹配到本地 rest 风格 api mockUrl
+      //     const matchRESTApi = Object.keys(mockMap).findIndex(d => {
+      //       const [,uri] = splitUrl(d);
+      //       const matcher = match(uri, { decode: decodeURIComponent })
+      //       return matcher(req.path)
+      //     }) > -1
+      //     // 如果匹配到 restApi 走本地 mock
+      //     if (matchRESTApi) return false
+      //     // 其他路径
+      //     const mockPath = path.join(__dirname, 'mock', req.path);
+      //     const value = requireUncached(mockPath);
+      //     return value === false
+      //   }
+      // }));
         // 对于每个 mock 请求，require mock 文件夹下的对应路径文件，并返回响应
-      Object.keys(mockMap).forEach(mockPath => {
-        const [verb, uri] = splitUrl(mockPath);
-        app[verb](path.posix.join('/mock', uri), function(req, res) {
-          const value = requireUncached(path.join(__dirname, 'mock', mockMap[mockPath]))
-          sendValue(req, res, value)
-        })
-      })
+      // Object.keys(mockMap).forEach(mockPath => {
+      //   const [verb, uri] = splitUrl(mockPath);
+      //   app[verb](path.posix.join('/mock', uri), function(req, res) {
+      //     const value = requireUncached(path.join(__dirname, 'mock', mockMap[mockPath]))
+      //     sendValue(req, res, value)
+      //   })
+      // })
 
-      app.all('/mock/*', function(req, res) {
-        const mockPath = path.join(__dirname, req.path)
-        const value = requireUncached(mockPath)
-        if (value) {
-          sendValue(req, res, value)
-        } else {
-          res.sendStatus(404)
-        }
-      })
+      // app.all('/mock/*', function(req, res) {
+      //   const mockPath = path.join(__dirname, req.path)
+      //   const value = requireUncached(mockPath)
+      //   if (value) {
+      //     sendValue(req, res, value)
+      //   } else {
+      //     res.sendStatus(404)
+      //   }
+      // })
     },
   },
   css: {
